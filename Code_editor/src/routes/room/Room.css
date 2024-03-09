@@ -1,0 +1,135 @@
+.room {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100vh;
+    padding: 0px 50px;
+    background-color: #f7f7f7; 
+  }
+  
+  .roomSidebar {
+    display: flex; 
+  }
+  
+  .fullWidth {
+    width: 100%;
+  }
+  
+  .roomCodeEditor {
+    width: 100%;
+    height: 100%;
+  }
+.languageFieldWrapper {
+    padding: 6px 10px;
+    background-color: #d3d3d3; 
+    border-radius: 5px;
+}
+
+.languageField {
+    padding: 6px 10px;
+    background-color: #d3d3d3; 
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.roomCodeEditor {
+    flex: 1;
+    width: 100%; 
+    height: 100vh; 
+}
+
+
+.roomSidebarCopyBtn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    color: white;
+    background-color: #ffdd00; 
+    border: 1px solid #ffdd00; 
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out 0.05s;
+}
+
+.roomSidebarCopyBtn:hover {
+    color: #ffdd00; 
+    background-color: white;
+}
+
+.roomSidebarBtn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: white;
+    background-color: #007bff; 
+    border: 1px solid #007bff; 
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out 0.05s;
+}
+
+.roomSidebarBtn:hover {
+    color: #007bff; 
+    background-color: white;
+}
+
+.roomSidebarUsersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.roomSidebarUsers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1000px;
+}
+
+.roomSidebarUsersEach {
+    display: grid;
+    justify-items: center;
+} 
+
+.roomSidebarUsersEachAvatar {
+    color: white;
+    border-radius: 50%; 
+    min-width: 30px;
+    min-height: 30px;
+    padding: 5px;
+    font-size: small;
+    background-color: #28a745; 
+    display: grid;
+    place-items: center;
+}
+
+.roomSidebarUsersEachName {
+    font-weight: bold;
+    font-size: small;
+    color: #007bff;
+}
+
+@media screen and (min-width: 991px) {
+    .roomSidebar {
+        display: flex;
+        flex: 0.15;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #eaeaea; 
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .roomSidebar > *:nth-child(2) {
+        margin-top: auto;
+    }
+
+    .roomCodeEditor {
+        flex: 0.9;
+    }
+}
